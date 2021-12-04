@@ -1,0 +1,486 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #d8d4c7;
+    text-decoration: none;
+    font-family: montserrat;
+}
+.nav_item{
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 46px;
+    text-align: center;
+}
+.nav_item:hover{
+    font-size: larger;
+    text-decoration: underline;
+}
+#arrow {   
+    display: inline-block;   
+    background: #ff6781; 
+    width: 50px;   
+    height: 50px;   
+    text-align: center;   
+    border-radius: 4px;   
+    margin: 30px;   
+    position: fixed;   
+    bottom: 30px;   
+    right: 30px;   
+    transition: background-color .3s;
+    z-index: 1000; 
+    background-image: url(img/arrow.png);
+    background-size: cover;
+    background-position: center;
+} 
+#arrow:hover {   
+    cursor: pointer;   
+    background-color: red; 
+} 
+#arrow:active {   
+    background-color: #555; 
+} 
+body {
+    background-image: url(img/background.png);
+    background-size: cover;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#burger_box{
+    display: none;
+}
+#main_title{
+    width: 964px;
+    height: 112px;
+    margin: 20px;
+}
+#menu{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    background: #ff6781;
+    border-radius: 10px;
+    list-style: none;
+    text-align: center;
+    height: 70px;
+}
+.title_text{
+    margin-top: 160px;
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#author_box{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    display: flex;
+    background: #1a1a1a;
+    border-radius: 20px;
+    height: 500px;
+    overflow: hidden;
+}
+#author_box_new{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    height: max-content;
+    overflow: hidden;
+}
+#author_photo{
+    margin: 20px;
+    width: 344px;
+    height: 452px;
+    border-radius: 10px;
+}
+#author_box_text{
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 20px;
+}
+#author_box_button{
+    background: #ff6781;
+    border-radius: 8px;
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0 20px;
+}
+#author_box_button_2{
+    background: #ff6781;
+    border-radius: 8px;
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    padding: 0 20px;
+}
+#book_frag_box{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    height: 500px;
+    overflow: hidden;
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+}
+#book_frag_box_new{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    height: max-content;
+    overflow: hidden;
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+}
+#book_frag_button{
+    background: #ff6781;
+    border-radius: 8px;
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    padding: 0 20px;
+}
+#book_frag_buttons{
+    display: flex;
+    padding: 20px;
+}
+#book_frag_button_2{
+    background: #ff6781;
+    border-radius: 8px;
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    padding: 0 20px;
+}
+#book_frag_button_2_file{
+    width: max-content;
+    background:#ff6781 ;
+    border-radius: 8px;
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    padding: 0 20px;
+}
+#com_grid{
+    justify-content: center;
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 610px 610px;
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+}
+.com{
+    padding: 20px;
+    font-family: Ruda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+#socialclubs{
+    display: flex;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+}
+#discord_name, #copyrights{
+    font-family: Rockwell Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+@media screen and (max-width: 1500px){
+    #com_grid{
+        justify-content: center;
+        margin: 0 10%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 900px 900px;
+        grid-column-gap: 80px;
+        grid-row-gap: 80px;
+    }
+
+}
+@media screen and (max-width: 1000px){
+    .com, #author_box_text, #book_frag_box, #book_frag_box_new, #book_frag_button, #book_frag_button_2, #author_box_button, #author_box_button_2, #book_frag_button_2_file, #discord_name, #copyrights{
+        font-size: 20px;
+    }
+    #com_grid{
+        justify-content: center;
+        margin: 0 10%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1000px 1000px;
+        grid-column-gap: 80px;
+        grid-row-gap: 80px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+        text-decoration: none;
+    }
+    body{
+        background-image: url(img/background.png);
+        background-size: cover;
+    }
+    #burger_box{
+        width: 70px;
+        height: 70px;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+    .burger_line{
+        border-radius: 12px;
+        width: 38px;
+        height: 5px;
+        background-color: white;
+        margin: 4px 4px;
+    }
+    header{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        align-items: center;
+    }
+    #main_title{
+        margin-left: 10px;
+        width: 269px;
+        height: 31px;
+    }
+    #menu, #arrow{
+        display: none;
+    }
+    #new_menu{
+        position: absolute;
+        background: red;
+        border-radius: 20px;
+        width: 200px;
+        height: 200px;
+        align-items: center;
+    }
+    .nav_item_new{
+        margin: 5px;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+    }
+    .nav_item_new:hover{
+        font: 24px;
+        text-decoration: underline;
+    }
+    .title_text{
+        margin: 10px 0;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 78px;
+        text-align: center;
+    }
+    #author_box{
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        height: 670px;
+        overflow: hidden;
+    }
+    #author_box_new{
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        height: max-content;
+        overflow: hidden;
+    }
+    #author_photo{
+        width: 308px;
+        height: 390px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    #author_box_text{
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        margin: 10px;
+    }
+    #author_box_button{
+        background: red;
+        border-radius: 20px;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    #author_box_button_2{
+        background: red;
+        border-radius: 20px;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    #book_frag_box{
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        height: 670px;
+        overflow: hidden;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }#book_frag_box_new{
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        height: max-content;
+        overflow: hidden;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+    #book_frag_button{
+        background: rgba(32, 69, 99, 0.6);
+        border-radius: 20px;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    #book_frag_button_2{
+        background: rgba(32, 69, 99, 0.6);
+        border-radius: 20px;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    #book_frag_button_2_file{
+        width: max-content;
+        background: rgba(32, 69, 99, 0.6);
+        border-radius: 20px;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    #com_grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .com{
+        padding: 10px;
+        font-family: Ruda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+    }
+    #socialclubs{
+        display: flex;
+        justify-content: left;
+    }
+    .icon{
+        width: 32px;
+        height: 32px;
+        margin: 0 10px;
+    }
+    
+}

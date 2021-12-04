@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WESTCars: Подбор, покупка и доставка электрокаров из США без посредников полностью под ключ" />
+    <meta name="keywords" content="авто из америки, купить авто, купить машину, купить машину из США, купить авто из США, доставка  авто, автомобили США, машины США, аукцион США, автомобильный аукцион, аукцион машин, аукцион америка, авто из америки, машины из америки, заказать авто из америки, купить машину в США, купить автомобиль в США, США, Америка, авто под ключ, авто под ключ из америки, авто под ключ из америки.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href= "style777.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="script777.js"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>WESTCars</title>
+</head>
+<body>
+    <main>
+        <a href="#main_title" id="arrow"></a>
+        <header>
+            <div id="burger_box" onclick="menu()">
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+            </div>
+            <img src="img/title.png" alt="title" id="main_title">
+            <nav>
+                <ul id="menu">
+                    <li><a href="#author_title" class="nav_item" onclick="menuback()">О компании</a></li>
+                    <li><a href="#book_frag_title" class="nav_item" onclick="menuback()">Процесс покупки</a></li>
+                    <li><a href="#com_title" class="nav_item" onclick="menuback()">Отзывы</a></li>
+                    <li><a href="#copyrights" class="nav_item" onclick="menuback()">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="author_title" class="title_text">WESTCars - Подбор, покупка и доставка электрокаров из США</div>
+        <div id="author_box">
+            <img src="img/my-photo.jpg" id="author_photo"></img>
+            <div id="author_box_text">
+                    Решили купить авто из США, потому что так гораздо дешевле? Но не знаете, как участвовать в аукционах и боитесь, что нарветесь на мошенников? И еще много опасений по растаможке, доставке и постановке на учет? Обращайтесь в компанию WESTСars – развеем ваши страхи. Подберем автомобиль из каталога и предоставим всю информацию о выбранной модели: техническое состояние, пробег, внешний вид.<br>
+                    Наши менеджеры проверят историю владения и техническое состояние транспорта по базам: Epic Win, Avto Check, CAR Fax.<br>
+                    У нас низкие цены на доставку за счёт того, что транспортируем без лишних звеньев. Используем видео трансляцию из салона автомобиля. Предоставляем возможность отследить авто по коду.<br>
+                    Доставка осуществляется с любого порта Америки. Экспорт автотранспортных средств происходит быстрее из-за большого количества портов, откуда отправляются корабли с авто.<br>
+            </div>
+        </div>
+        <button id="author_box_button" onclick="text1roll()">Читать</button>
+        <button id="author_box_button_2" onclick="text1rollback()" hidden><a href="#author_box">Свернуть</a></button>
+        <div id="book_frag_title" class="title_text">Как происходит покупка авто из США?</div>
+        <div id="book_frag_box">
+            &nbsp;&nbsp;&nbsp;Подбор по параметрам<br>
+            С учетом индивидуальных пожеланий клиента мы осуществляем тщательный подбор вариантов, как по общедоступным, так и по закрытым аукционным площадкам.<br>
+            &nbsp;&nbsp;&nbsp; Проверка<br>
+             Мы проверяем продавца, историю автомобиля, наличие необходимых для экспорта документов. Огромный опыт экспертов компании позволяет избежать скрытых нюансов на этом этапе.<br>
+            &nbsp;&nbsp;&nbsp;Торги<br>
+             Мы делаем ставки на аукционе только по лотам, соответствующим бюджету и критериям нашего клиента. Как крупный трейдер мы предоставляем клиентам все привилегии аукционных площадок и наименьшие ставки аукционных сборов.<br>
+             &nbsp;&nbsp;&nbsp;Оплата<br>
+             В случае выигрыша лота, его стоимость и аукционный сбор нужно оплатить в течение 2 рабочих дней. Оплаты производятся клиентом напрямую в США.<br>
+             &nbsp;&nbsp;&nbsp;Отправление<br>
+             Доставка авто с площадки аукциона в порт отправки осуществляется сертифицированными партнерами-перевозчиками на автовозах. Перед погрузкой авто в контейнер мы делаем дополнительные фотографии.<br>
+             &nbsp;&nbsp;&nbsp;Таможня<br>
+             Мы предоставляет услугу таможенного оформления “под ключ” - наш представитель на таможенном терминале оформит все документы, Вам останется лишь подписать их.<br>
+        </div>
+        <button id="book_frag_button" onclick="text2roll()"> Читать</button>
+        <div id="book_frag_buttons">
+            <button id="book_frag_button_2_file" hidden>Узнать больше</a></button>        
+            <button id="book_frag_button_2" onclick="text2rollback()" hidden><a href="#book_frag_box">Свернуть</a></button>
+        </div>
+        <div id="com_title" class="title_text">Отзывы клиентов</div>
+        <div id="com_grid">
+            <div class="com">Спасибо большое компании "Westcars" за оказанную помощь в приобретении автомобиля. Особенно, большое спасибо менеджеру Денису. Помог сориентироваться в выборе авто, учёл все пожелания и подобрал отличный вариант, консультировал по всем возникающим вопросам, на всех этапах покупки и перевозки автомобиля, действительно профессионал своего дела! Удачи "Westсars"!</div>
+            <div class="com">Хочу выразить свою безграничную благодарность, компании Весткарс,
+            Очень доволен сотрудничеством с ними, с их помощью услуг, пригнал в Минск 6 электро машин BMW I3. Мне помогал менеджер, Константин. Очень культурный и интелегентный молодой человек! Оказался очень терпеливым к моим всем вопросам. Каждый день скидывал мне много вариантов авто.  </div>
+            <div class="com">Заказывал машину у компании WESTCars. Скажу так, столкнулся я с командой профессионалов на всех стадиях покупки и транспортировки машины. Полная консультация по всем вопросам, помощь в оформлении документов на таможне!!!. Хочу выразить благодарность отдельно КАЗИМИРУ, он помог выкупить машинку которую я хотел и он всегда достойно отвечал на мои глупые вопросы!!! УДАЧИ ВАМ WESTСаrs !!!</div>
+            <div class="com">Хорошая компания и персонал. Заказывал две Хонды Аккорд 10 поколения и ещё два авто полгода назад. Всем остался очень доволен, в том числе доставкой и сопровождением на таможне. Молодцы! Четко работают ребята!</div>
+        </div>
+    </main>
+    <footer>
+        <div id="socialclubs">
+            <a href="https://vk.com/e.kostogladov" target="_blank"><img class="icon" src="img/vk-logo.png"></a>
+            <a href="https://instagram.com/kostogladov_?utm_medium=copy_link" target="_blank"><img class="icon" src="img/Instagram-logo.png"></a>
+        </div>
+        <div id="copyrights">egorkos2003@gmail.com</div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 500);
+           });
+       });
+            jQuery(document).ready(function() {
+        let btn = $('#arrow');
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+        });
+        });
+    </script>
+</body>
